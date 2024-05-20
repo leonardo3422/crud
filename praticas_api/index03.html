@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CRUD Livros</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="scripts.js"></script>
+</head>
+<body>
+    <div class="container">
+        
+            <h2>Atualizar Livro</h2>
+        <form onsubmit="event.preventDefault(); updateLivro();">
+            <input id="updateBookId" type="text" placeholder="ID do Livro">
+            <input id="updateTitle" type="text" placeholder="Novo Título">
+            <input id="updateDescription" type="text" placeholder="Nova Descrição">
+            <input id="updateYear" type="number" placeholder="Novo Ano">
+            <button type="submit">Atualizar</button>
+        </form>
+
+        <h2>Excluir Livro</h2>
+        <form onsubmit="event.preventDefault(); deleteLivro();">
+            <input id="deleteBookId" type="text" placeholder="ID do Livro">
+            <button type="submit">Excluir</button>
+        </form>
+        <a class="btn btn-primary" href="index.html">Voltar</a>
+    </div>
+</body>
+</html>
